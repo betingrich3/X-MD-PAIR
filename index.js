@@ -60,34 +60,28 @@ app.get('/pairing', async (req, res) => {
             let c = output.data.split('/')[3];
             await delay(1000) 
             let session_id  = await sparky.sendMessage(sparky.user.id, { 
-               text: 'X-BOT-MD:'+c.trim()
+               text: 'Mercedes:'+c.trim()
             })
             //session quarted sender 
-            let cc = `*⚠️ Don't Share The SESSION-ID ☝🏻 Shown Above*.\n\n*Web :* *https://x-md-qr-elctro-wizard.koyeb.app*\n\n\n*BY TEAM EX-BOT-Z 🗿*`;
+            let cc = `*⚠️ Don't Share The SESSION-ID*. \n\n\n*BY Marisel*`;
             await sparky.sendMessage(sparky.user.id, { text: cc }, { quoted: session_id });
 		//creds.json	
 	 //const sparkyses = await sparky.sendMessage(sparky.user.id, { document: sessionsparky, mimetype: `application/json`, fileName: `creds.json` });
 			
 		
-				await sparky.sendMessage(sparky.user.id, { text: `_*Thanks for choosing X-BOT-MD*_
+				await sparky.sendMessage(sparky.user.id, { text: `_*Thanks for choosing Mercedes*_
 
 *REPO*
-https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X-BOT-MD
+https://github.com/betingrich3/Mercedes 
+     
+*Follow us kindly*
+https://instagram.com/hr_kenya
             
-            
-*ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ғᴏʀ ᴍᴏʀᴇ ϙᴜᴇʀʏ*
-https://chat.whatsapp.com/KMqXtMicl9uCgMuduidlXb
-            
-*Cʜᴀɴɴᴇʟ ʟɪɴᴋ*
-https://whatsapp.com/channel/0029Va9ZOf36rsR1Ym7O2x00
-            
-            
-*Replit Deployment Tutorial Link:*
-https://youtu.be/SfXJuSug4Lo?si=aRToYKZFZFzan0a0
-            
-*Heroku Deployment link:*
-            
-            
+*Channel*
+https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x
+
+*YouTube Channel*
+https://youtube.com/@wemacomic      
 *©ASWIN SPARKY*` }, {quoted: session_id});
 
 	await delay(3000);
